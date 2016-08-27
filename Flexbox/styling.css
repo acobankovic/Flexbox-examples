@@ -1,0 +1,221 @@
+
+
+/*pagelayout*/
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  background: rgb(19, 32, 32);
+  
+}
+
+.example {
+	background-color: AliceBlue;
+	width: 700px;
+	margin-bottom: 50px;
+	border-radius: 10px;
+}
+
+.example-content {
+    padding: 30px;
+}
+
+.parent {
+	border: 5px solid FireBrick;
+}
+
+.item {
+	margin: 5px;
+	text-align: center;
+	background-color: teal;
+	color: AliceBlue;
+	line-height: 50px;
+
+}
+
+
+/*typography*/
+
+
+h1 {
+  font-family: sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: AliceBlue;
+  font-size: 70px;
+  padding-bottom: 50px;
+}
+
+h2 {
+  font-family: sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: normal;
+  color: rgb(48, 80, 80);
+  font-size: 16px;
+  padding-top: 40px;
+}
+
+p {
+  font-family: sans-serif;
+  color: rgb(19, 32, 32);
+  font-size: 25px;
+  padding: 30px;
+  line-height: 40px;
+  text-align: justify;
+}
+
+
+/*flexbox*/
+
+
+/*display:flex*/
+
+.example-flex .parent{
+	display: flex;
+}
+
+.example-flex .item{
+	width: 70px
+}
+
+
+/*row reverse primjer*/
+
+.example-direction .parent {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.example-direction .item {
+	width: 70px;
+}
+
+
+/*flex wrap primjer*/
+
+.example-wrap .parent {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.example-wrap .item {
+	width: 150px;
+}
+
+
+/*justify content primjer*/
+
+.example-justify .parent {
+	display: flex;
+	justify-content: space-around;
+}
+
+.example-justify .item {
+	width: 70px;
+}
+
+
+/*align items primjer*/
+
+.example-align .parent {
+	display: flex;
+	align-items: center;
+	height: 150px;
+	justify-content: space-around;
+}
+
+.example-align .item {
+	width: 70px;
+}
+
+
+/*align content primjer*/
+
+.example-align-content .parent {
+	display: flex;
+	align-content: flex-start;
+	flex-wrap: wrap;
+	height: 300px;
+}
+
+.example-align-content .item {
+	width: 150px;
+}
+
+
+/*order primjer*/
+
+.example-order .parent {
+	display: flex;
+	justify-content: space-around;
+}
+
+.example-order .item {
+	width: 70px;
+}
+
+.example-order .item:nth-child(3) {
+	background-color: lightblue;
+	order: 1;
+	color: black;
+}
+
+
+/*flex grow primjer*/
+
+.example-grow .parent {
+	display: flex;
+}
+
+.example-grow .item {
+	width: 70px
+}
+
+.example-grow .item:nth-child(3) {
+    flex-grow: 1.5;
+    background-color: lightblue;
+    color: black;
+}
+
+
+/*flex shrink primjer*/
+
+.example-shrink .parent {
+	display: flex;
+}
+
+.example-shrink .item {
+	width: 170px
+}
+
+.example-shrink .item:nth-child(3) {
+    flex-shrink: 3;
+    background-color: lightblue;
+    color: black;
+}
+
+
+/*align self primjer*/
+
+.example-align-self .parent {
+	display: flex;
+	height: 150px;
+	align-items: flex-end;
+	justify-content: space-around;
+  }
+
+.example-align-self .item {
+	width: 70px;
+	height: 50px
+}
+
+.example-align-self .item:nth-child(3) {
+	align-self: flex-start;
+	background-color: lightblue;
+	color: black;
+}
